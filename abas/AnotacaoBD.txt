@@ -1,0 +1,246 @@
+
+Para um sistema de perfumaria, você pode considerar a criação das seguintes tabelas no banco de dados:
+
+Tabela de Perfumes:
+
+ID (Chave Primária)
+Nome
+Marca
+Tipo (Masculino, Feminino, Unissex)
+Notas de Fragrância
+Volume
+Preço
+Estoque
+Tabela de Marcas:
+
+ID (Chave Primária)
+Nome
+País de Origem
+Ano de Fundação (Opcional, se relevante)
+Tabela de Categorias (Opcional, se você deseja categorizar os perfumes por tipo de fragrância, como floral, cítrica, etc.):
+
+ID (Chave Primária)
+Nome
+Tabela de Clientes:
+
+ID (Chave Primária)
+Nome
+E-mail
+Senha (Hashed para segurança)
+Endereço
+Telefone
+Outras informações relevantes sobre o cliente
+Tabela de Pedidos (Se você planeja ter um sistema de e-commerce):
+
+ID (Chave Primária)
+ID do Cliente (Chave Estrangeira referenciando a tabela de Clientes)
+Data do Pedido
+Status do Pedido
+Outras informações relevantes sobre o pedido
+Tabela de Itens de Pedido (Para armazenar os itens específicos em cada pedido):
+
+ID (Chave Primária)
+ID do Pedido (Chave Estrangeira referenciando a tabela de Pedidos)
+ID do Perfume (Chave Estrangeira referenciando a tabela de Perfumes)
+Quantidade
+Preço Unitário
+
+
+
+
+---------------------
+<section class="py-5">
+        <div class="container px-4">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./assets/img/perfume-masc-one-million.jpg" width="344"
+                            height="229" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">One Million</h5>
+                                <!-- Product price-->
+                                $40.00 - $80.00
+                                 <!-- Product reviews-->
+                                 <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="details.html">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./assets/img/perfume-masc-lumens.jpg" width="344" height="229"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Lumens piment</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$20.00</span>
+                                $18.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./assets/img/perfume-masc-vodka-man.jpg" width="344" height="229"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Vodka Man</h5>
+                                <!-- Product price-->
+                                $40.00 - $80.00
+                                 <!-- Product reviews-->
+                                 <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./assets/img/perfume-masc-hooter.jpg" width="344" height="229"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Hooter</h5>
+                                <!-- Product price-->
+                                $40.00 - $80.00
+                                 <!-- Product reviews-->
+                                 <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./assets/img/perfume-masc-ferrari.jpg" width="344" height="229"
+                            alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Ferrari RED</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                    <div class="fas fa-star" style="color: #ffc107;"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$20.00</span>
+                                $18.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    ---------
+
+    .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);}
+
+    .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
